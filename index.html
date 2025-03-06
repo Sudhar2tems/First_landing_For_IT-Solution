@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poket – IT Solution Responsive WordPress Theme</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="./index.css">
     <link rel="icon" href="https://themexbd.com/poket/itsolution/wp-content/uploads/2021/10/poket-favi.png" sizes="32x32">
-    <title>Poket – IT Solution Responsite WordPress Theme</title>
 </head>
 <body>
-    <!-- Top bar -->
+    <!-- Top Bar -->
     <div class="top-bar">
         <span><i class="fas fa-home"></i> 2nd Floor New World.</span>
         <span><i class="fas fa-phone-alt"></i> +498556778345</span>
         <span><i class="fas fa-envelope"></i> demo@example.com</span>
         <div class="social-icons">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-x-twitter"></i>
-            <i class="fab fa-instagram"></i>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
         </div>
     </div>
 
@@ -26,6 +26,12 @@
         <div class="logo">
             <img src="./Images/logo.png" alt="Poket Logo"> 
         </div>
+        
+        <!-- Mobile Menu Icon -->
+        <div class="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+
         <ul class="nav-links">
             <li class="dropdown">
                 <a href="#">Home <i class="fas fa-chevron-down"></i></a>
@@ -47,7 +53,7 @@
                     <li><a href="#">Our Clients</a></li>
                     <li><a href="#">Pricing</a></li>
                     <li><a href="#">Team</a></li>
-                    <li><a href="#">Faq Page</a></li>
+                    <li><a href="#">FAQ Page</a></li>
                     <li><a href="#">Single Service</a></li>
                 </ul>
             </li>
@@ -61,26 +67,40 @@
             </li>
             <li><a href="#">Contact</a></li>
         </ul>
+
         <div class="search-support">
             <i class="fas fa-search"></i>
-            <button class="support-btn">Get a Support</button>
+            <button class="support-btn">Get Support</button>
         </div>
     </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <span class="close-menu">&times;</span>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
 
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="content">
             <p class="tagline">#01 Best IT Solution</p>
-            <h1>Provide IT Solution & Business.</h1>
+            <h1>Providing IT Solutions & Business Services</h1>
             <p class="description">
-                We’ve been a nearly strategic thought leader for five decades, 
-                bringing innovative solutions and industry expertise.
+                We’ve been a strategic thought leader for decades, 
+                delivering innovative solutions and industry expertise.
             </p>
             <a href="#" class="discover-btn">Discover More</a>
         </div>
-        <div class="hero-image">
-        </div>
+        <div class="hero-image"></div>
     </section>
 
+    <script src="./index.js"></script>
 </body>
 </html>

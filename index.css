@@ -219,3 +219,108 @@ h1 {
 .discover-btn:hover {
     background-color: #cc3300; /* Slightly darker on hover */
 }
+
+.menu-icon{
+    display: none;
+}
+/* Mobile Responsive Styles */
+@media only screen and (max-width: 767px) {
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Hide Top Bar */
+    .top-bar {
+        display: none;
+    }
+
+    /* Header */
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 15px;
+        background: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    /* Hide Full Navigation */
+    .nav-links {
+        display: none;
+    }
+
+    /* Hamburger Menu */
+    .menu-icon {
+        font-size: 28px;
+        cursor: pointer;
+        display: block;
+        color: #333;
+    }
+
+/* Mobile Navigation */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;  /* Initially hidden */
+    width: 80%;
+    height: 100vh;
+    background: white;
+    transition: right 0.3s ease-in-out;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 1100;
+    display: none; /* Hide by default */
+    flex-direction: column;
+}
+
+/* Show mobile menu when active */
+.mobile-menu.active {
+    display: flex; /* Show when toggled */
+    right: 0;
+}
+
+/* Close Button */
+.close-menu {
+    font-size: 24px;
+    text-align: right;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Mobile Menu Items */
+.mobile-menu ul {
+    list-style: none;
+    padding: 20px 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-menu ul li {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.mobile-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    transition: color 0.3s ease-in-out;
+}
+
+.mobile-menu ul li a:hover {
+    color: #ff4500;
+}
+}
