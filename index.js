@@ -18,3 +18,12 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 300);
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const progressBars = document.querySelectorAll(".fill");
+
+    progressBars.forEach(bar => {
+        const width = bar.getAttribute("data-width");
+        bar.style.width = width + "%"; // Animate progress bars
+    });
+});

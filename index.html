@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poket – IT Solution Responsive WordPress Theme</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="./index.css">
-    <link rel="icon" href="https://themexbd.com/poket/itsolution/wp-content/uploads/2021/10/poket-favi.png" sizes="32x32">
+     <!-- Slick CSS -->
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+     <!-- jQuery (Required by Slick) -->
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <!-- Slick JS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+     <link rel="stylesheet" href="./index.css">
+     <link rel="icon" href="https://themexbd.com/poket/itsolution/wp-content/uploads/2021/10/poket-favi.png" sizes="32x32">
 </head>
 <body>
     <!-- Top Bar -->
@@ -100,6 +107,53 @@
         </div>
         <div class="hero-image"></div>
     </section>
+
+
+    <div class="carousel_container">
+        <div class="carousel_wrapper">
+            <div class="carousel_images">
+                <img src="images/b1.png" alt="Image 1">
+                <img src="images/b2.png" alt="Image 2">
+                <img src="images/b3.png" alt="Image 3">
+                <img src="images/b4.png" alt="Image 4">
+                <img src="images/b5.png" alt="Image 5">
+                <!-- Duplicated images for infinite effect -->
+                <img src="images/b1.png" alt="Image 1">
+                <img src="images/b2.png" alt="Image 2">
+                <img src="images/b3.png" alt="Image 3">
+                <img src="images/b4.png" alt="Image 4">
+                <img src="images/b5.png" alt="Image 5">
+            </div>
+        </div>
+    </div>
+    
+    <!-- About Section -->
+<section class="about-section">
+    <div class="about-content">
+        <div class="image-container">
+            <img src="./Images/about.jpg" alt="About Image">
+        </div>
+        <div class="text-container">
+            <h3 class="about-us">ABOUT US</h3>
+            <h1>We Are Increasing Business Success With <span>Technology</span></h1>
+            <p>Over 25 years working in IT services developing software applications and mobile apps for clients all over the world. From its medieval origins to the digital era, learn everything there is to know about the ubiquitous lorem ipsum passage. Creation timelines for the standard lorem ipsum passage vary, with some citing the 15th century.</p>
+            
+            <div class="progress-bar">
+                <div class="label"><strong>Web Solution</strong> <span class="percentage">80%</span></div>
+                <div class="bar"><div class="fill" style="width: 80%;"></div></div>
+            </div>
+            
+            <div class="progress-bar">
+                <div class="label"><strong>Mobail Service</strong> <span class="percentage">60%</span></div>
+                <div class="bar"><div class="fill" style="width: 60%;"></div></div>
+            </div>
+            
+            <a href="#" class="discover-btn">Discover More</a>
+        </div>
+        
+    </div>
+</section>
+
 
     <script src="./index.js"></script>
 </body>
